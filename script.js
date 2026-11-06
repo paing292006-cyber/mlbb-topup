@@ -58,3 +58,8 @@ card.querySelector("h4").innerText;
 
 });
 });
+document.querySelector(".promo").onclick=()=>{
+
+alert("🎉 Today's Promotion\n\nTop Up now and enjoy special discounts!");
+
+}
