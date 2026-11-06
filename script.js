@@ -44,3 +44,17 @@ We'll process your order shortly.`
 );
 
 });
+const payment = document.querySelector("select");
+
+payment.addEventListener("change", () => {
+document.getElementById("paymentMethod").innerText = payment.value;
+});
+
+cards.forEach(card=>{
+card.addEventListener("click",()=>{
+
+document.getElementById("packageName").innerText =
+card.querySelector("h4").innerText;
+
+});
+});
