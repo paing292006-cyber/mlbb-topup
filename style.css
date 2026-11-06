@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111827;
+  color: white;
+}
+
+header {
+  background: #1f2937;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+h2 {
+  margin: 15px 0 10px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+input,
+select {
+  background: #374151;
+  color: white;
+}
+
+.packages button {
+  background: #2563eb;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.buy {
+  background: #22c55e;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
