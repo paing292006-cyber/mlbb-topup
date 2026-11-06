@@ -1,22 +1,46 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const buyButton = document.querySelector(".buy");
+let selectedPackage = "";
 
-  buyButton.addEventListener("click", () => {
-    const userId = document.querySelectorAll("input")[0].value;
-    const zoneId = document.querySelectorAll("input")[1].value;
-    const payment = document.querySelector("select").value;
+const cards = document.querySelectorAll(".card");
+const buyBtn = document.querySelector(".buy");
 
-    if (userId === "" || zoneId === "") {
-      alert("Please enter your User ID and Zone ID.");
-      return;
-    }
+cards.forEach(card => {
+  card.addEventListener("click", () => {
 
-    alert(
-      "Order Received!\n\n" +
-      "User ID: " + userId +
-      "\nZone ID: " + zoneId +
-      "\nPayment: " + payment +
-      "\n\nThank you!"
-    );
+    cards.forEach(c => c.style.border = "2px solid transparent");
+
+    card.style.border = "2px solid #00bfff";
+
+    selectedPackage = card.querySelector("h4").innerText;
+
+    buyBtn.innerText = "BUY " + selectedPackage;
   });
+});
+
+buyBtn.addEventListener("click", () => {
+
+  const userId = document.querySelectorAll("input")[0].value;
+  const zoneId = document.querySelectorAll("input")[1].value;
+
+  if(userId=="" || zoneId==""){
+    alert("Please enter User ID and Zone ID");
+    return;
+  }
+
+  if(selectedPackage==""){
+    alert("Please select a package");
+    return;
+  }
+
+  alert(
+`Order Successful!
+
+Package : ${selectedPackage}
+
+User ID : ${userId}
+
+Zone ID : ${zoneId}
+
+We'll process your order shortly.`
+);
+
 });
