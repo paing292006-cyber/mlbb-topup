@@ -87,3 +87,21 @@ transition:.3s;
 .buy:hover{
 background:#0095cc;
 }
+.summary{
+margin-top:20px;
+padding:18px;
+background:#161b22;
+border-radius:12px;
+border:1px solid #30363d;
+}
+
+.summary p{
+margin-top:10px;
+font-size:16px;
+}
+
+input[type=file]{
+margin-top:15px;
+background:#161b22;
+padding:10px;
+}
