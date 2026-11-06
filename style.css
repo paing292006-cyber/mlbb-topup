@@ -169,3 +169,42 @@ box-shadow:0 0 20px #00bfff;
 transform:scale(1.05);
 
 }
+.diamond{
+font-size:24px;
+display:block;
+margin-bottom:10px;
+}
+
+.payment-box{
+display:flex;
+gap:15px;
+margin-top:15px;
+}
+
+.pay-card{
+flex:1;
+background:#161b22;
+padding:15px;
+border-radius:12px;
+text-align:center;
+border:2px solid #2d3748;
+cursor:pointer;
+}
+
+.pay-card img{
+width:55px;
+height:55px;
+object-fit:contain;
+margin-bottom:8px;
+}
+
+.upload-btn{
+display:block;
+margin-top:20px;
+padding:15px;
+background:#1e3c72;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+cursor:pointer;
+}
